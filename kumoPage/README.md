@@ -3,11 +3,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
  ##  Steps to Install
- Clone the repository:
-   1. git clone https://github.com/yourusername/ecommerce-website.git
+Cloning the Repository  
+   1. git clone https://github.com/SecaraS/Kumo-Website.git
 
     Navigate to the project directory:
-   2. cd ecommerce-website
+   2. cd kumoPage
 
      Install dependencies:
    3. npm install

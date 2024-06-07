@@ -1,0 +1,74 @@
+.testimonial-carousel{
+   width: 100%;
+}
+.testimonial {
+    padding: 0 150px;
+}
+.prevButton {
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.nextButton {
+    display: flex;
+    position: relative;
+   margin-left: auto;
+   bottom: 50%;
+   transform: translateY(50%);
+}
+.prevButton,
+.nextButton {
+    background-color: rgb(242, 242, 242);
+    font-size: 40px;
+    border: none;
+}
+.prevButton:hover{
+    color: red;
+    margin-right: 10px;
+}
+.nextButton:hover {
+    color: red;
+    padding-right: 10px;
+}
+.testimonialQuote {
+    font-size: 23px;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    color: rgb(62, 62, 62); 
+}
+.testimonialAuthor {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.testimonialOccupation {
+    font-size: 24px;
+    color: rgb(82, 82, 82);
+    
+}
+.testimonialImage {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
+@media(max-width: 1050px) {
+    .testimonial-carousel{
+        width: 80vw;
+     }
+    .testimonial {
+        padding:0 50px;
+    }
+    .testimonialQuote {
+        font-size: 20px;
+    }
+    .testimonialAuthor {
+        font-size: 22px;
+    }
+    .testimonialOccupation {
+        font-size: 22px;        
+    }
+}
+  

@@ -1,0 +1,12 @@
+.star-rating {
+    font-size: 24px;
+    color: #ffef92; /* default color for empty stars */
+  }
+  
+  .star {
+    cursor: pointer;
+  }
+  
+  .star.filled {
+    color: #ffbb00; /* color for filled stars */
+  }

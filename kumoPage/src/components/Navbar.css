@@ -1,0 +1,235 @@
+a {
+    text-decoration: none;
+  }
+.navbarEl {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 100vw;
+    height: 9vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    z-index: 10;
+    position: relative;
+    box-sizing: border-box;
+}
+.logoPrint {
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbarPages {
+    display: flex;
+    flex-direction: row;
+}
+.navbarPages li {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-right: 25px;
+    font-size: 18px;
+    padding-right: 25px;
+}
+ul li:hover {
+    color: rgb(255, 60, 0);
+    cursor: pointer;
+}
+.navbarIcons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+.navbarIcons i {
+    margin-right: 25px;
+    font-size: 26px;
+    color: black;
+}
+.nrProducts {
+    display: flex;
+    color: white;
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 55%;
+    font-size: 14px;
+    
+}
+.navbarIcons i:hover {
+    color: rgb(255, 60, 0);
+    cursor: pointer;
+    transition: color 0.1s ease;
+    transform: scale(1.1);
+}
+/*  cartTab style */
+
+.cartTab {
+position: fixed;
+display: grid;
+grid-template-rows: 60px 1fr 60px;
+inset: 10vh 1vw 1vh auto;
+height: 89vh;
+width: 25vw;
+color: white;
+background-color: rgb(55, 55, 55);
+
+}
+/*
+.navbarEl .cartTab {
+    inset: 10vh 1vw 1vh auto;
+}
+*/
+
+.cartTab h1 {
+    font-weight: 500;
+}
+.cartTab .btnCart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.btnCart button {
+    cursor: pointer;
+    background-color: rgb(240, 236, 0);
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+} 
+.btnCart .btnClose {
+    background-color:rgb(255, 255, 255)
+}
+.btnCart button:hover {
+    opacity: 90%;
+}
+/* shopping cart, product  */
+.cartTab .listCart .imgCart img {
+    width: 100%;
+}
+.cartTab .listCart .products {
+    display: grid;
+    grid-template-columns: 7vw 5vw 3vw 7vw;
+    gap: 10px;
+justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.listCart .quantity span {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+} 
+.listCart .products:nth-child(odd) {
+    background-color: rgb(65, 65, 65) !important;
+}
+.listCart{
+ overflow: auto;
+}
+.listCart::webkit-scrollbar {
+    width: 0;
+}
+.listCart {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+#menuIcon {
+    display: none;
+}
+@media(max-width: 1400px) {
+.navbarEl {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+} @media(max-width: 1200px) {
+    .logoPrint{
+        padding-top: 15px;
+    }
+    .cartTab {
+        height: 80vh;
+        width: 37vw;
+        inset: 10vh 1vw 1vh auto;
+    }
+    .cartTab .listCart .products {
+        gap: 25px;
+        grid-template-columns: 10vw 5vw 3vw 10vw;
+    }    
+    } 
+    @media (max-width: 992px) {
+        .cartTab {
+            width: 45vw;
+        }
+        .cartTab .listCart .products {
+            grid-template-columns: 12vw 7vw 4vw 12vw;
+        }  
+       .navbarPages li {
+        margin-right: 10px;
+        font-size: 16px;
+        padding-right: 30px;
+       }
+       .navbarIcons i {
+        margin-right: 15px;
+        font-size: 24px;
+       }
+    }
+
+    @media (max-width: 768px) {
+        .cartTab {
+            width: 60vw;
+        }
+        .cartTab .listCart .products {
+            grid-template-columns: 15vw 9vw 4vw 17vw;
+        }  
+        .logoPrint {
+            padding-left: 15px;
+        }
+        .navbarPages li {
+            margin-right: 5px;
+            font-size: 14px;
+            padding-right: 10px;
+           }
+           .navbarIcons i {
+            margin-right: 13px;
+            font-size: 22px;
+           }
+
+    }
+
+    @media (max-width: 576px) {
+        .cartTab {
+            width: 87vw;
+        }
+        .cartTab .listCart .products {
+            grid-template-columns: 22vw 17vw 8vw 21vw;
+        }  
+        #menuIcon {
+            display: inline;
+        }
+        .hidden {
+            display: none;
+        }
+        
+        .visible {
+            display: block;
+        }
+        .searchBar {
+            display: none;
+          }
+          
+          .searchBar.visible {
+            display: block;
+          }
+          
+    }
+    

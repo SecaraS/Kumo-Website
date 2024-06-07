@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name":" Half Summer Set",
+        "price": 100,
+        "image": "./Images/1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Formal Lowers",
+        "price": 101,
+        "image": "images/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Half Floral Set",
+        "price": 102,
+        "image": "images/3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Half Fancy Lady Dress",
+        "price": 103,
+        "image": "images/4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Flix Flox Jeans",
+        "price": 104,
+        "image": "images/5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Fancy Salwar Suits",
+        "price": 105,
+        "image": "images/6.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Printed Straight Kurta",
+        "price": 106,
+        "image": "images/7.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Collor Full Jacket",
+        "price": 107,
+        "image": "images/8.jpg"
+    }
+]
